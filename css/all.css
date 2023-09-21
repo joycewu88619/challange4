@@ -1,0 +1,198 @@
+body h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: white;
+}
+
+body p, h2, h3 {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.outer {
+  background: hsl(257, 40%, 49%);
+  position: relative;
+  height: 100vh;
+}
+.outer .bg {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.outer .bg .mobile_bg {
+  display: none;
+}
+.outer .bg img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.outer .container {
+  position: relative;
+  z-index: 2;
+  padding: 40px 60px;
+}
+.outer .container .header {
+  margin-bottom: 50px;
+}
+.outer .container .header img {
+  width: 150px;
+}
+.outer .container .content {
+  width: 100%;
+  display: flex;
+}
+.outer .container .content .box1 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.outer .container .content .box1 img {
+  width: 90%;
+}
+.outer .container .content .box2 {
+  width: 50%;
+  padding: 35px;
+  overflow: hidden;
+}
+.outer .container .content .box2 h1 {
+  font-size: 32px;
+  line-height: 1.5;
+}
+.outer .container .content .box2 .description {
+  margin: 20px 0;
+}
+.outer .container .content .box2 .description p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.outer .container .content .box2 .button {
+  background: white;
+  border-radius: 20px;
+  text-align: center;
+  width: 35%;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.outer .container .content .box2 .button:hover {
+  background: hsl(300, 69%, 71%);
+}
+.outer .container .content .box2 .button:hover p {
+  color: white;
+}
+.outer .container .content .box2 .button p {
+  color: hsl(257, 40%, 49%);
+}
+.outer .container .footer {
+  display: flex;
+  justify-content: end;
+}
+.outer .container .footer .icon {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 375px) {
+  .outer .bg .desktop_bg {
+    display: none;
+  }
+  .outer .bg .mobile_bg {
+    display: block;
+  }
+  .outer .container {
+    padding: 20px 15px;
+    flex-direction: column;
+  }
+  .outer .container .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .outer .container .content .box1 {
+    width: 100%;
+  }
+  .outer .container .content .box1 img {
+    width: 100%;
+  }
+  .outer .container .content .box2 {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  .outer .container .content .box2 h1 {
+    font-size: 20px;
+  }
+  .outer .container .content .box2 .description p {
+    font-size: 14px;
+  }
+  .outer .container .footer {
+    justify-content: center;
+  }
+}/*# sourceMappingURL=all.css.map */
